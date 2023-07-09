@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6j5sqqjtctmv"]
+[gd_scene load_steps=4 format=3 uid="uid://c6j5sqqjtctmv"]
 
 [ext_resource type="PackedScene" uid="uid://cv2k6c25ixo58" path="res://other_scene/character_body_2d.tscn" id="1_uvh0k"]
+[ext_resource type="Script" path="res://src/character_body_2d.gd" id="2_kl583"]
+[ext_resource type="PackedScene" uid="uid://dntet8gaik4jq" path="res://other_scene/mushroom.tscn" id="3_tuhoy"]
 
 [node name="Level1" type="Node"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_uvh0k")]
 position = Vector2(395, 269)
+script = ExtResource("2_kl583")
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("3_tuhoy")]
+position = Vector2(670, 258)
